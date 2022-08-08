@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
 import React from "react";
+import s from './Filtr.module.css';
 
 const Filtr = ({value, onChange}) => {
     return (
       <>
-          <label >
+          <label className={s.filtr}>
             <span> Filtr by Name </span>
             <input
               type="text"
