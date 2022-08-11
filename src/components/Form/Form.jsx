@@ -6,7 +6,6 @@ import s from './Form.module.css';
 let initialForm = {
   name: '',
   number: '',
-  id: '',
 };
 
 export default function Form({ addContact }) {
