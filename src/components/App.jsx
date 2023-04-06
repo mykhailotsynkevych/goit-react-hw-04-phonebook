@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import './App.css';
 
 import Form from './Form/Form';
 import Filtr from './Filtr/Filtr';
@@ -49,12 +50,12 @@ export const App = () => {
   };
 
     return (
-      <>
+      <div className='App'>
         <h1>Phonebook</h1>
         <Form addContact={addContact}/>
-        <h2>Contacts</h2>
+        <h2 className="secondTitle">Contacts</h2>
         <Filtr value={filter} onChange={changeFilter} />
         <ContactsList contactsList={filterTodosByPriority()} onDeleteContact={deleteContact} />
-      </>
+      </div>
     );
 };
